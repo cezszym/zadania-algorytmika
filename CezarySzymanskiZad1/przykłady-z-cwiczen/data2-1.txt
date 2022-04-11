@@ -1,0 +1,16 @@
+Opis: "Sprawdzanie czy słowo z języka 0n1n"
+stany: 0,1,A,N
+alfabet: 0,1,_
+długość słowa: 5
+słowo: 000101
+stan końcowy: A,N
+stan początkowy: 0
+instrukcja:
+0:
+  0;0,0,r;
+  1;1,1,r;
+  _;N,_,s;
+1:
+  0;N,0,s;
+  1;1,1,r;
+  _;A,_,s;

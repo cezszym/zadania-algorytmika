@@ -1,0 +1,20 @@
+Opis: "Sprawdzanie przemienności 0 i 1"
+stany: 0,1,A,N
+alfabet: 0,1,_
+długość słowa: 7
+słowo: 1010101
+stan końcowy: A,N
+stan początkowy: 0
+instrukcja:
+0:
+  0;1,0,r;
+  1;2,1,r;
+  _;A,_,s;
+1:
+  0;N,_,s;
+  1;2,1,r;
+  _;A,_,s;
+2:
+  0;1,0,r;
+  1;N,1,s;
+  _;A,_,s;

@@ -1,0 +1,20 @@
+Opis: "Dodatawanie unarne"
+stany: 0,1,2,3,k
+alfabet: 1,_
+długość słowa: 6
+słowo: ___11_1111_
+stan końcowy: k
+stan początkowy: 0
+instrukcja:
+0:
+  1;0,1,r;
+  _;1,1,r;
+1:
+  1;1,_,r;
+  _;2,_,l;
+2:
+  1;3,1,r;
+  _;2,1,l;
+3:
+  1;3,1,l;
+  _;k,_,s;

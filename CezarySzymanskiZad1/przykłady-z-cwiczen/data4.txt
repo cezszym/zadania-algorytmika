@@ -1,0 +1,14 @@
+Opis: "Sprawdzanie parzystości"
+stany: 0,1,A,N
+alfabet: 1,_
+długość słowa: 5
+słowo: _1111_
+stan końcowy: A,N
+stan początkowy: 0
+instrukcja:
+0:
+  1;1,1,r;
+  _;A,_,s;
+1:
+  1;0,1,r;
+  _;N,_,s;

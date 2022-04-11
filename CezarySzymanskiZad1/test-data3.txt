@@ -1,0 +1,28 @@
+Opis: "Sprawdzanie czy słowo z języka bna(cb)n"
+stany: 0,1,2,3,A,N
+alfabet: a,b,c,_
+długość słowa: 8
+słowo: bbbacbcba
+stan końcowy: A,N
+stan początkowy: 0
+instrukcja:
+0:
+  a;N,a,s;
+  b;1,b,r;
+  c;N,c,s;
+  _;N,_,s;
+1:
+  a;2,a,r;
+  b;1,b,r;
+  c;N,c,s;
+  _;N,_,s;
+2:
+  a;N,a,s;
+  b;N,b,s;
+  c;3,c,r;
+  _;A,_,s;
+3:
+  a;N,a,s;
+  b;2,b,r;
+  c;N,c,s;
+  _;N,_,s;

@@ -1,0 +1,24 @@
+Opis: "Sprawdzanie podzielności przez 3 licz. bin."
+stany: 0,1,A,N
+alfabet: 0,1,_
+długość słowa: 5
+słowo: 11
+stan końcowy: A,N
+stan początkowy: 0
+instrukcja:
+0:
+  0;1,0,r;
+  1;1,1,r;
+  _;N,_,s;
+1:
+  0;2,0,r;
+  1;2,1,r;
+  _;N,_,s;
+2:
+  0;3,0,r;
+  1;3,1,r;
+  _;N,_,s;
+3:
+  0;1,0,r;
+  1;1,1,r;
+  _;A,_,s;
